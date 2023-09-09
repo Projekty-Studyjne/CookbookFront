@@ -1,0 +1,18 @@
+<div class="recipe" *ngFor="let recipe of recipes">
+  <div class="image">
+    <img src="{{recipe.imageUrl}}">
+  </div>
+  <div class="title">
+    <span>
+      {{recipe.title}}
+    </span>
+  </div>
+
+  <div class="description">
+    {{recipe.description}}
+  </div>
+
+  <app-ingredient [id]="recipe.id"></app-ingredient>
+
+  <p><a routerLink="recipe">Zobacz przepis</a></p>
+</div>

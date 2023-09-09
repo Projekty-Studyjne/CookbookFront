@@ -1,0 +1,14 @@
+.tile{
+  background-color: grey;
+  float: left;
+  width: 10%;
+  height: 50%;
+  margin-left: 10%;
+  margin-top: 0.5%;
+}
+
+.header{
+  background-color: red ;
+  height: 10vh;
+}
+
