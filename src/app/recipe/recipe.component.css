@@ -7,8 +7,11 @@
   background-color: cornsilk;
   margin-bottom: 20px;
   width: 50%;
-  margin: 2.5% 25% 0 25%;
-  border: 1px solid #000;
+  margin: 5% 25% 0 25%;
+  border-radius: 17px;
+  background: #ffffff;
+  box-shadow:  12px 12px 20px #bdbdbd,
+               -12px -12px 20px #ffffff;
 }
 
 .title {
@@ -23,6 +26,7 @@
   width: auto;
   object-fit: cover;
   margin: 0 auto;
+
 }
 
 .image img{
@@ -30,6 +34,10 @@
   height: 90%;
   margin-top: 2%;
   margin-bottom: 2%;
+  border-radius: 50px;
+  background: #e0e0e0;
+  box-shadow:  41px 41px 82px #bebebe,
+             -41px -41px 82px #ffffff;
 }
 
 p a:after

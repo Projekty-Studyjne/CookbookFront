@@ -1,12 +1,26 @@
 .category{
-    width: 200px;
-    height: 110px;
+    width: 15%;
+    height: 70vh;
     background-color: cadetblue;
-    font-size: 30px;
+    font-size: 5vh;
     border-width: 5px;
     border-color: blue;
      position: fixed;
     left: 10;
-    top: 30; 
+    top: 30;
+    margin-top: 10vh;
+    text-align: center;
+    border-radius: 11px;
+    background: #ffffff;
+    box-shadow:  34px 34px 68px #f0f0f0,
+                 -34px -34px 68px #ffffff;
+}
 
+.tile{
+  font-size: 3vh;
+  margin: 1vh;
+  border-radius: 17px;
+  background: #d4d4d4;
+  box-shadow:  5px 5px 0px #d2d2d2,
+             -5px -5px 0px #d6d6d6;
 }

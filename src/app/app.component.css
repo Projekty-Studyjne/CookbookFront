@@ -1,13 +1,23 @@
-.tile{
-  background-color: grey;
-  float: left;
-  width: 10%;
-  height: 50%;
-  margin-left: 10%;
-  margin-top: 0.5%;
-}
 
 .header{
-  background-color: red ;
+  display: flex;
+  justify-content: flex-start;
+  background-color: #585151;
   height: 10vh;
 }
+
+.tile{
+  float: left;
+  width: 25%;
+  height: 50%;
+  margin-left: 20%;
+  color: white;
+  text-align: center;
+}
+
+.tile input {
+  background-color: grey;
+  border-color:grey;
+  color: white;
+}
+
