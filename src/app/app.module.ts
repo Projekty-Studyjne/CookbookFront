@@ -7,18 +7,21 @@ import { RecipeComponent } from './recipe/recipe.component';
 import { HttpClientModule } from '@angular/common/http';
 import { IngredientComponent } from './ingredient/ingredient.component';
 import { FullRecipeComponent } from './full-recipe/full-recipe.component';
+import { CategoryComponent } from './category/category.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     RecipeComponent,
     IngredientComponent,
-    FullRecipeComponent
+    FullRecipeComponent,
+    CategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

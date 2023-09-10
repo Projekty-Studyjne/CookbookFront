@@ -1,0 +1,12 @@
+.category{
+    width: 200px;
+    height: 110px;
+    background-color: cadetblue;
+    font-size: 30px;
+    border-width: 5px;
+    border-color: blue;
+     position: fixed;
+    left: 10;
+    top: 30; 
+
+}
