@@ -9,6 +9,7 @@ import { IngredientsService } from '../ingredients.service';
 })
 export class IngredientComponent {
   @Input() id?: number;
+  @Input() onlyNames?: boolean;
   ingredients?: IngredientResponse[];
   private service: IngredientsService = inject(IngredientsService);
 
@@ -23,4 +24,14 @@ export class IngredientComponent {
       });
     }
   }
+
+  // getFloatQuantity(ingredient: IngredientResponse){
+  //   if(ingredient.quantity!== undefined){
+  //   return parseFloat(ingredient.quantity);
+  //   console.log(ingredient.quantity);
+  //   }
+  //   console.log(ingredient.quantity);
+  //   return undefined;
+  // }
+
 }

@@ -1,26 +1,36 @@
-.category{
-    width: 15%;
-    height: 70vh;
-    background-color: cadetblue;
-    font-size: 5vh;
-    border-width: 5px;
-    border-color: blue;
-     position: fixed;
-    left: 10;
-    top: 30;
-    margin-top: 10vh;
-    text-align: center;
-    border-radius: 11px;
-    background: #ffffff;
-    box-shadow:  34px 34px 68px #f0f0f0,
-                 -34px -34px 68px #ffffff;
+.category {
+  width: 20%;
+  height: 70vh;
+  font-size: 5vh;
+  border-width: 5px;
+  position: fixed;
+  left: 10;
+  top: 30;
+  margin-top: 10vh;
+  margin-left: 3vh;
+  text-align: center;
+  border-radius: 53px;
+  background: linear-gradient(145deg, #957d76, #b1958c);
+  box-shadow:  35px 35px 0px #423834,
+               -35px -35px 0px #ffded2;
 }
 
-.tile{
+.tile {
   font-size: 3vh;
   margin: 1vh;
   border-radius: 17px;
-  background: #d4d4d4;
-  box-shadow:  5px 5px 0px #d2d2d2,
-             -5px -5px 0px #d6d6d6;
+  background:  #957d76;
+  box-shadow: 5px 5px 0px  #957d76, -5px -5px 0px  #957d76;
+}
+
+.tile:hover {
+  transform: scale(1);
+}
+
+.tile:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tile a{
+  color: #000;
 }

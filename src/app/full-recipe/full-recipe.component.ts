@@ -1,6 +1,8 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { RecipeResponse } from '../model/DTO/recipe-response';
 import { RecipesService } from '../recipes.service';
+import { ActivatedRoute } from '@angular/router';
+import { IngredientsService } from '../ingredients.service';
 
 @Component({
   selector: 'app-full-recipe',
@@ -8,15 +10,20 @@ import { RecipesService } from '../recipes.service';
   styleUrls: ['./full-recipe.component.css']
 })
 export class FullRecipeComponent {
-  recipes?: RecipeResponse[];
+  recipe?: RecipeResponse;
 
-  private service: RecipesService = inject(RecipesService);
+  private recipeService: RecipesService = inject(RecipesService);
+
+  private route = inject(ActivatedRoute);
 
   constructor(){
-    this.service.get().subscribe({
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    if(id){
+    this.recipeService.getById(id).subscribe({
       next:(res)=>{
-        this.recipes=res;
+        this.recipe=res;
       }
     })
   }
+}
 }

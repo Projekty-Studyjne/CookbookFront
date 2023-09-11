@@ -9,6 +9,9 @@ import { IngredientComponent } from './ingredient/ingredient.component';
 import { FullRecipeComponent } from './full-recipe/full-recipe.component';
 import { CategoryComponent } from './category/category.component';
 import { RouterModule } from '@angular/router';
+import { CategoryRecipeComponent } from './category-recipe/category-recipe.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,12 +19,15 @@ import { RouterModule } from '@angular/router';
     RecipeComponent,
     IngredientComponent,
     FullRecipeComponent,
-    CategoryComponent
+    CategoryComponent,
+    CategoryRecipeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FontAwesomeModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

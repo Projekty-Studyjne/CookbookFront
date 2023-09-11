@@ -1,6 +1,7 @@
 <div class="category">
-  Kategorie
+  <br>
+  Categories
     <div class="tile" *ngFor="let category of categories">
-      {{category.name}}
+      <a [routerLink]="['/category',category.id]">{{category.name}}</a>
   </div>
 </div>

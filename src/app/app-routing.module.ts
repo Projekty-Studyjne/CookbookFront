@@ -4,11 +4,12 @@ import { FullRecipeComponent } from './full-recipe/full-recipe.component';
 import { AppComponent } from './app.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { CategoryComponent } from './category/category.component';
+import { CategoryRecipeComponent } from './category-recipe/category-recipe.component';
 
 const routes: Routes = [
-  {path: "", component: RecipeComponent },
-  //{path: "", component: CategoryComponent},
-  {path: 'recipe', component: FullRecipeComponent }
+  {path: '', component: RecipeComponent},
+  {path: 'recipe/:id', component: FullRecipeComponent },
+  {path: 'category/:id', component: CategoryRecipeComponent}
 ];
 
 @NgModule({

@@ -1,3 +1,5 @@
+
 <div class="ingredient" *ngFor="let ingredient of ingredients">
-  {{ingredient.name}}
+  <span class="allInfo" *ngIf="!onlyNames">{{ingredient.quantity}} {{ingredient.unit}} {{ingredient.name}}</span>
+  <span class="onlyNames" *ngIf="onlyNames">{{ingredient.name}}</span>
 </div>

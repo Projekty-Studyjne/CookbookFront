@@ -1,18 +1,11 @@
 <div class="header">
   <!-- <img src="/assets/logo.png"  alt="logo" class="logo"> -->
-  <div class="tile">
-    <h3>Wyszukaj skladnik</h3>
-    <input type="text" placeholder="Szukaj...">
+  <div class="home">
+    <a [routerLink]="['/']">HOME</a>
   </div>
   <div class="tile">
-    <h3>Wyszukaj przepis</h3>
-    <input type="text" placeholder="Szukaj...">
-  </div>
-  <div class="tile">
-    <a href="http://localhost:5121/Home/Privacy">Profil</a>
+    <a href="http://localhost:5121/Home/Privacy">PROFILE</a>
   </div>
 </div>
-<div>
 <app-category></app-category>
-</div>
 <router-outlet> </router-outlet>

@@ -1,1 +1,16 @@
-<h1>FULL RECIPE</h1>
+<div class="recipe" *ngIf="recipe !== undefined">
+  <div class="image">
+    <img src="{{recipe.imageUrl}}">
+  </div>
+  <div class="title">
+    <span>
+      {{recipe.title}}
+    </span>
+  </div>
+  <div class="ingredients">
+   <app-ingredient [id]="recipe.id" [onlyNames]="false"></app-ingredient>
+  </div>
+  <div class="instructions">
+    Instructions: {{recipe.instructions}}
+  </div>
+</div>

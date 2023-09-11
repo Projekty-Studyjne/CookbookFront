@@ -1,24 +1,17 @@
-.container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 100%;
-}
 .recipe {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 20%;
-  background-color: rgb(255, 220, 220);
+  background-color: cornsilk;
   margin-bottom: 20px;
-  width: 90vh;
-  margin-left: 50vh;
-  margin-top: 5vh;
+  width: 50%;
+  margin: 5% 25% 0 25%;
   border-radius: 17px;
   background: #ffffff;
-  box-shadow: 12px 12px 20px #bdbdbd, -12px -12px 20px #ffffff;
+  box-shadow:  12px 12px 20px #bdbdbd,
+               -12px -12px 20px #ffffff;
 }
 
 .title {
@@ -33,19 +26,22 @@
   width: auto;
   object-fit: cover;
   margin: 0 auto;
+
 }
 
-.image img {
+.image img{
   width: 100%;
   height: 90%;
   margin-top: 2%;
   margin-bottom: 2%;
   border-radius: 50px;
   background: #e0e0e0;
-  box-shadow: 41px 41px 82px #bebebe, -41px -41px 82px #ffffff;
+  box-shadow:  41px 41px 82px #bebebe,
+             -41px -41px 82px #ffffff;
 }
 
-p a:after {
+p a:after
+{
   display: inline-block;
   -webkit-transform: scale(0.5, 1); /* Safari and Chrome */
   -moz-transform: scale(0.5, 1); /* Firefox */
@@ -55,20 +51,4 @@ p a:after {
   content: "\2192";
   position: relative;
   margin-left: 2px;
-}
-
-.searchBar{
-  width: 20%;
-  height: 70vh;
-  font-size: 5vh;
-  border-width: 5px;
-  left: 10;
-  top: 30;
-  margin-top: 10vh;
-  margin-right: 3vh;
-  text-align: center;
-  border-radius: 53px;
-  background: linear-gradient(145deg, #957d76, #b1958c);
-  box-shadow:  35px 35px 0px #423834,
-               -35px -35px 0px #ffded2;
 }

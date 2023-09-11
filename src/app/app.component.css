@@ -1,23 +1,41 @@
-
 .header{
   display: flex;
   justify-content: flex-start;
+  text-align: center;
   background-color: #585151;
   height: 10vh;
+  background-image: url(https://media.istockphoto.com/id/1307964333/vector/kitchenware-vector-pattern.jpg?s=612x612&w=0&k=20&c=tyDNGwCSzJEzHRa_F0-6ANDfMJcUi2YkYCQXMPBxKQA=);
 }
 
 .tile{
+  display: flex;
   float: left;
-  width: 25%;
   height: 50%;
-  margin-left: 20%;
+  margin-left: 15%;
   color: white;
   text-align: center;
+  margin-top: 1%;
 }
 
-.tile input {
-  background-color: grey;
-  border-color:grey;
-  color: white;
+.home{
+  margin: 1%;
+  color: rgb(0, 0, 0);
+  font-size: 3vh;
 }
+
+.tile a {
+  color: rgb(0, 0, 0);
+  font-size: 3vh;
+  font-weight: 900; /* Ustawienie tekstu jako bardzo pogrubiony */
+  font-family: 'Your Desired Font', sans-serif; /* Wybierz preferowaną czcionkę */
+  text-decoration: none; /* Usunięcie podkreślenia */
+}
+
+.home a {
+  color: rgb(0, 0, 0);
+  font-weight: 900;
+  font-family: 'Your Desired Font', sans-serif;
+  text-decoration: none;
+}
+
 

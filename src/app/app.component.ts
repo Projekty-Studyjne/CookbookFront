@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { faHouse } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +9,8 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   title = 'app';
+
+  faHouse = faHouse;
 
   constructor(private router:Router){}
   goToProfile(){

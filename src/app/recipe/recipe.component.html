@@ -1,19 +1,30 @@
-<div class="recipe" *ngFor="let recipe of recipes">
-  <div class="image">
-    <img src="{{recipe.imageUrl}}">
+<!-- app.component.html -->
+
+<div class="container">
+  <div class="recipe-list">
+    <div class="recipe" *ngFor="let recipe of recipes">
+      <div class="image">
+        <img src="{{ recipe.imageUrl }}" />
+      </div>
+      <div class="title">
+        <span>{{ recipe.title }}</span>
+      </div>
+      <div class="description">
+        {{ recipe.description }}
+      </div>
+      <app-ingredient [id]="recipe.id" [onlyNames]="true"></app-ingredient>
+      <p><a [routerLink]="['/recipe', recipe.id]">See details</a></p>
+    </div>
   </div>
-  <div class="title">
-    <span>
-      {{recipe.title}}
-    </span>
+
+  <div class="searchBar">
+    <div class="tile">
+      <h3>Search for ingredient</h3>
+      <input type="text" placeholder="Szukaj..." [(ngModel)]="searchIngredientName" (input)="getRecipesByIngredient()">
+    </div>
+    <div class="tile">
+      <h3>Search for recipe</h3>
+      <input type="text" placeholder="Szukaj..." [(ngModel)]="searchName" (input)="getRecipesByName()"/>
+    </div>
   </div>
-
-  <div class="description">
-    {{recipe.description}}
-  </div>
-
-
-  <app-ingredient [id]="recipe.id"></app-ingredient>
-
-  <p><a routerLink="recipe">Zobacz przepis</a></p>
 </div>
