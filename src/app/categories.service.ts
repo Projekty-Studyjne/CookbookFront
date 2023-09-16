@@ -9,11 +9,11 @@ import { CategoryResponse } from './model/DTO/category-response';
 export class CategoriesService {
 
   constructor(private httpClient: HttpClient) {}
-  
+
   private readonly url='https://localhost:7007/CategoryApi';
 
   get(): Observable<CategoryResponse[]>{
       return this.httpClient.get<CategoryResponse[]>(this.url);
     }
-  
+
    }

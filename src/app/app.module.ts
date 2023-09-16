@@ -12,6 +12,12 @@ import { RouterModule } from '@angular/router';
 import { CategoryRecipeComponent } from './category-recipe/category-recipe.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { FormsModule } from '@angular/forms';
+import { LogUserComponent } from './log-user/log-user.component';
+import { RatingComponent } from './rating/rating.component';
+import { CommentComponent } from './comment/comment.component';
+import { UserComponent } from './user/user.component';
+
+
 
 @NgModule({
   declarations: [
@@ -20,7 +26,11 @@ import { FormsModule } from '@angular/forms';
     IngredientComponent,
     FullRecipeComponent,
     CategoryComponent,
-    CategoryRecipeComponent
+    CategoryRecipeComponent,
+    LogUserComponent,
+    RatingComponent,
+    CommentComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
@@ -28,6 +38,7 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     FontAwesomeModule,
     FormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

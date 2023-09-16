@@ -5,11 +5,14 @@ import { AppComponent } from './app.component';
 import { RecipeComponent } from './recipe/recipe.component';
 import { CategoryComponent } from './category/category.component';
 import { CategoryRecipeComponent } from './category-recipe/category-recipe.component';
+import { LogUserComponent } from './log-user/log-user.component';
 
 const routes: Routes = [
   {path: '', component: RecipeComponent},
   {path: 'recipe/:id', component: FullRecipeComponent },
-  {path: 'category/:id', component: CategoryRecipeComponent}
+  {path: 'category/:id', component: CategoryRecipeComponent},
+  {path: 'LogInUser/:id', component: LogUserComponent},
+  {path: 'LogOutUser', component: LogUserComponent}
 ];
 
 @NgModule({

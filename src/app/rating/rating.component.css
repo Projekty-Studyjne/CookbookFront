@@ -1,0 +1,14 @@
+.ratings {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 20px;
+  width: 80vh;
+}
+span {
+  margin-right: 10px;
+  font-size: 18px;
+}

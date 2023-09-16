@@ -1,0 +1,5 @@
+<div class="ratings" *ngFor="let rating of ratings">
+  <app-user [id]="rating.id"></app-user>
+  <span>{{ rating.rating }}</span>
+  <app-comment [id]="rating.id"></app-comment>
+</div>

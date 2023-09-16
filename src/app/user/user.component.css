@@ -1,0 +1,17 @@
+
+.user {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+
+.user-name {
+  font-weight: bold;
+  color: #007bff;
+  text-decoration: none;
+  flex: 0 0 auto;
+  width: 100px;
+  white-space: nowrap;
+}
+
+
